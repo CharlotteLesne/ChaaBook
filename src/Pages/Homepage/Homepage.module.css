@@ -1,0 +1,36 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.titleBackground {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 286px;
+	height: 96px;
+	margin-top: 200px;
+	border-radius: 10px;
+	border-bottom: 5px solid rgb(242, 207, 165);
+	background-color: bisque;
+}
+
+.title {
+	font-size: 56px;
+	text-align: center;
+	color: black;
+}
+
+.bookpageButton {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+.createButton {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+}

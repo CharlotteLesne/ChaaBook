@@ -1,0 +1,18 @@
+html,
+body,
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: #a67f5a;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
