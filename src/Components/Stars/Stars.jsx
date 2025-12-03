@@ -13,8 +13,8 @@ const Stars = ({ rating, onChange }) => {
 					icon={faStar}
 					size="lg"
 					onClick={() => onChange(value)}
-					onMouseEnter={() => setHover(value)}
-					onMouseLeave={() => setHover(0)}
+					onMouseEnter={() => onChange && setHover(value)}
+					onMouseLeave={() => onChange && setHover(0)}
 					style={{
 						cursor: "pointer",
 						color: value <= (hover || rating) ? "#FFD43B" : "CCCCCC",

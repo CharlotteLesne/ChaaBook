@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import style from "./CreateBook.module.css";
 import Stars from "../../Components/Stars";
 import Backbutton from "../../Components/Backbutton";
+import saveBook from "./queries/saveBooks";
+import { useNavigate } from "react-router";
 
 const CreateBook = () => {
 	const [rating, setRating] = useState(0);
+	const navigate = useNavigate();
 
 	return (
 		<div>
@@ -16,14 +19,16 @@ const CreateBook = () => {
 					className={style.form}
 					onSubmit={(event) => {
 						event.preventDefault();
-						console.log(
+						saveBook(
 							event.currentTarget.titre.value,
 							event.currentTarget.auteur.value,
 							event.currentTarget.genre.value,
 							event.currentTarget.resume.value,
 							rating,
 							event.currentTarget.avis.value
-						);
+						).then(() => {
+							navigate("/");
+						});
 					}}
 				>
 					<div className={style.inputWrapper}>
