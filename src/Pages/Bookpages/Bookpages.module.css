@@ -10,6 +10,24 @@
 	padding: 24px;
 	text-align: center;
 }
+.wrapperEmptyState {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btnCreate {
+	width: 220px;
+	height: 48px;
+}
 
 .paragraphe {
 	text-align: justify;

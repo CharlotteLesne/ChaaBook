@@ -48,7 +48,19 @@ const Bookpages = () => {
 
 	if (books.length === 0) {
 		return (
-			<div>Vous n'avez pas encore de livre, vous pouvez allez en créez un</div>
+			<div className={style.wrapperEmptyState}>
+				<div className={style.text}>
+					<h1>Vous n'avez pas encore de livre</h1>
+					<p>Vous pouvez allez en créez un</p>
+				</div>
+
+				<Button
+					className={style.btnCreate}
+					text="Créer mon premier livre"
+					to="/create"
+				/>
+				<Backbutton text="Acceuil" />
+			</div>
 		);
 	}
 
